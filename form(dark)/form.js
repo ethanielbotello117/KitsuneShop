@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
     function success() {
       form.reset();
       status.classList.add('success');
-      status.innerHTML = "Thanks!";
+      status.innerHTML = "Your form has been sent, Thx!";
     }
   
     function error() {

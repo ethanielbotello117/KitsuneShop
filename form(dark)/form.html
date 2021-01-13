@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Functional Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <body style="background-color: black;"></body>
+</head>
+
+<body>
+    <a href="../index.html">Home</a>
+    <section>
+        <div class="container">
+            <form action="https://formspree.io/f/mknpkkab" id="test-form" method="POST">
+
+                <div class="form-group">
+                    <div class="lilman">
+                    <label for="firstName">First Name</label>                        
+                    </div>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="handle">Instagram Handle (Not Required)</label>
+                    <input type="text" id="handle" name="handle">
+                </div>
+
+                <div class="form-group">
+                    <label for="massage">Future design requests?(Not Required)</label>
+                    <textarea name="message" id="messge" rows="10" maxlength="200"></textarea>
+                </div>
+
+                <button type="submit" id="test-form-submit">Submit</button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+    <script src="form.js"></script>
+</body>
+
+</html>
