@@ -120,13 +120,14 @@ header{
 .browsebutton{
     text-align: center;
     padding: 0;
-    margin: 100px;
+    margin-top: 200px;
     color: white;
     text-decoration: none;
     background-color: rgb(255, 0, 200);
     padding: 25px;
     font-size: 130%;
     transition: 0.3s;
+    opacity: 80%;
 }
 
 .browsebutton:hover{
@@ -134,11 +135,45 @@ header{
     padding-left: 45px;
     padding-right: 45px;
     background-color: rgb(0, 132, 255);
-    border-radius: 20px;
+    border-radius: 7px;
     font-size: 150%;
+    opacity: 100%;
 }
 
 .parallax{
     min-height: 500px;
     background: transparent;
+}
+
+.filler{
+    margin: 80px;
+    padding: 25px;
+}
+
+.showcasebottom{
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+
+.viewall{
+    text-decoration: none;
+    padding: 20px;
+    background-color:  rgb(255, 0, 200);
+    color: white;
+    transition: 0.2s;
+}
+
+.viewall:hover{
+    background-color: rgb(0, 132, 255);
+    padding: 25px;
+    border-radius: 7px;
+    font-size: 110%;
+}
+
+footer{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: black;
 }
