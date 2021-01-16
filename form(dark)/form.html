@@ -6,16 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Functional Form</title>
     <link rel="stylesheet" href="form.css">
+    <link rel="shortcut icon" href="../images/kitsunesymbol.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <body style="background-color: black;"></body>
 </head>
 
 <body>
-    <header><a href="index.html" class="logolink">
-        <img class="logo" src="images/KitsuneShopLogo.png" alt=""></a>
+    <header>
+        <div class="logocontainer"><a href="../index.html"><div class="logo"></div></a></div>
     </header>
-    <section>
+    <section class="sidebar">
+        <ul>
+            <li class="sidelink"><a href="../index.html" class="homelink">
+                    <span class="icon">
+                        <img class="sideimg" src="../images/chomusuke.png" alt="">
+                    </span>
+                    <span class="name">Take Me Home</span>
+                </a></li>
+
+            <li class="sidelink"><a href="../browse(dark)/browse.html" class="browselink">
+                    <span class="icon">
+                        <img src="../images/Astolfo.jpg" alt="" class="sideimg">
+                    </span>
+                    <span class="name">Browse</span>
+                </a></li>
+        </ul>
+    </section>
+    <section class="form">
         <div class="container">
             <form action="https://formspree.io/f/mknpkkab" id="test-form" method="POST">
 

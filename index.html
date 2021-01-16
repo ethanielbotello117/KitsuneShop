@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <link rel="shortcut icon" href="images/chomusuke.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/kitsunesymbol.png" type="image/x-icon">
     <title>HomePage</title>
     <meta name='author' content='Ethaniel Botello'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
@@ -14,8 +14,9 @@
 </head>
 
 <body>
-    <header><a href="index.html" class="logolink">
-            <img class="logo" src="images/KitsuneShopLogo.png" alt=""></a>
+
+    <header>
+        <div class="logocontainer"><a href="index.html"><div class="logo"></div></a></div>
     </header>
     <section class="sidebar">
         <ul>
@@ -44,7 +45,7 @@
 
     <div class="parallax" data-parallax="scroll" data-image-src="images/Senko2.jpg" data-z-index="1">
         <section class="showcase">
-        <a href="browse(dark)/browse.html" class="browsebutton">View</a>
+        <a href="items/item1/item1.html" class="browsebutton">View</a>
     </section>
     </div>
     <div class="filler">
@@ -53,7 +54,7 @@
 
     <div class="parallax" data-parallax="scroll" data-image-src="images/Astolfo.jpg" data-z-index="1">
         <section class="showcase">
-        <a href="browse(dark)/browse.html" class="browsebutton">View</a>
+        <a href="items/item2/item2.html" class="browsebutton">View</a>
     </section>
     </div>
     <div class="filler">
@@ -62,7 +63,7 @@
 
     <div class="parallax" data-parallax="scroll" data-image-src="images/ManoAloe.jpg" data-z-index="1">
     <section class="showcase">
-        <a href="browse(dark)/browse.html" class="browsebutton">View</a>
+        <a href="items/item1/item1.html" class="browsebutton">View</a>
     </section>    
     </div>
     </div>
@@ -74,6 +75,15 @@
     <footer>
         Copyright 2021 KitsuneShop
     </footer>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow")
+        })
+    </script>
 </body>
 
 </html>

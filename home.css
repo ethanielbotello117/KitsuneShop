@@ -10,7 +10,6 @@ html{
     font-family: 'Roboto', sans-serif;
     z-index: 2;
 }
-/* sidebar */
 
 body{
     background: rgb(27, 27, 27);
@@ -21,9 +20,32 @@ header{
     height: 90px;
 }
 
-.products{
-    display: grid;
+/* Logo */
+
+.logocontainer{
+    margin-left: 25px;
+    height: 100%;
+    width: 300px;
+    transition: 0.3s;
 }
+
+.logo{
+    height: 80%;
+    width: 80%;
+    background-image: url(images/KitsuneShopLogo2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    height: 90%;
+    width: 90%;
+    background-image: url(images/kitsunelogo.gif);
+    transition: 0.5s;
+}
+
+/* Sidebar */
 
 .sidebar{
     top: 100px;
@@ -70,6 +92,10 @@ header{
     height: 60px;
     line-height: 60px;
     text-align: center;
+    /* background-image: url(images/chomusuke.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
 }
 
 .sidebar ul li a .name{
@@ -95,18 +121,6 @@ header{
     justify-self: center;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.logo{
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    height: 90px;
-    transition: 0.3s;
-}
-
-.logo:hover{
-    height: 95px;
 }
 
 /* Showcase section */
@@ -176,4 +190,28 @@ footer{
     padding-bottom: 15px;
     padding-left: 10px;
     background-color: black;
+}
+
+P{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+
+/* Loader */
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(27, 27, 27);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/kitsuneloader.gif);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
