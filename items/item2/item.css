@@ -16,7 +16,7 @@ body{
 
 .parallax{
     background: url(../../images/Senko2.jpg);
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     height: 500px;
 }
