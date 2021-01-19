@@ -1,0 +1,22 @@
+html{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+body{
+    height: 3000px;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 25px;
+}
+
+.parallax{
+    background: url(../../images/ManoAloe.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}

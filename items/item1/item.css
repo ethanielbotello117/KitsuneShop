@@ -50,6 +50,7 @@ header{
     height: 24%;
     transition: 0.5s;
     overflow: hidden;
+    z-index: 3;
 }
 
 .sidebar:hover{
@@ -122,7 +123,6 @@ header{
     width: 1100px;
     background-color: black;
     margin: auto;
-    margin-top: 50px;
     display: flex;
 }
 

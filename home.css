@@ -215,3 +215,9 @@ P{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (max-width: 700px){
+    .parallax{
+        display: none;
+    }
+}
