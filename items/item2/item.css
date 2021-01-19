@@ -15,8 +15,8 @@ body{
 }
 
 .parallax{
-    background: url(../../images/Senko2.jpg);
-    background-size: contain;
+    background: url(../../images/Tofumang.png);
+    background-size: cover;
     background-attachment: fixed;
     height: 500px;
 }
