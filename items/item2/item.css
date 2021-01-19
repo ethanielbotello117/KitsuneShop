@@ -7,16 +7,16 @@ body{
     height: 3000px;
 }
 
-.container{
+/* .container{
     max-width: 960px;
     margin: 0 auto;
     font-size: 24px;
     padding: 25px;
-}
+} */
 
 .parallax{
     background: url(../../images/Tofumang.png);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
+    /* background-size: cover;
+    background-attachment: fixed; */
+    height: 1000px;
 }
