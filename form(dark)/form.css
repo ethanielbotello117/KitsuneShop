@@ -11,6 +11,7 @@ html{
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(27, 27, 27);
     color: white;
 }
 
@@ -67,7 +68,7 @@ header{
     padding-top: 10px;
     position: fixed;
     width: 60px;
-    height: 16%;
+    height: 17%;
     transition: 0.5s;
     overflow: hidden;
 }
