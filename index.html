@@ -13,8 +13,7 @@
     <script src="parallax.min.js"></script>
 </head>
 
-<body>
-
+<body class="desktop">
     <header>
         <div class="logocontainer"><a href="index.html"><div class="logo"></div></a></div>
     </header>
@@ -41,6 +40,17 @@
                     <span class="name">Browse</span>
                 </a></li>
         </ul>
+    </section>
+
+    <section class="showcasemobile">
+        <div class="mobilecontainer">
+            <ul>
+                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
+                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
+                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
+                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
+            </ul>
+        </div>
     </section>
 
     <div class="parallax" data-parallax="scroll" data-image-src="images/Senko2.jpg" data-z-index="1">
@@ -71,6 +81,14 @@
     <section class="showcasebottom">
         <a href="browse(dark)/browse.html" class="viewall">Browse All</a>
     </section>
+
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+        function toggleMenu(){
+            let navigation = document.querySelector('.sidebar');
+            navigation.classList.toggle('active');
+        }
+    </script>
 
     <footer>
         Copyright 2021 KitsuneShop

@@ -16,208 +16,365 @@ body{
     height: 1000px;
 }
 
-header{
-    height: 90px;
-}
-
-/* Logo */
-
-.logocontainer{
-    margin-left: 25px;
-    height: 100%;
-    width: 300px;
-    transition: 0.3s;
-}
-
-.logo{
-    height: 80%;
-    width: 80%;
-    background-image: url(images/KitsuneShopLogo2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: 0.3s;
-}
-
-.logo:hover{
-    height: 90%;
-    width: 90%;
-    background-image: url(images/kitsunelogo.gif);
-    transition: 0.5s;
-}
-
-/* Sidebar */
-
-.sidebar{
-    top: 100px;
-    padding-top: 10px;
-    position: fixed;
-    width: 60px;
-    height: 24%;
-    transition: 0.5s;
-    overflow: hidden;
-}
-
-.sidebar:hover{
-    width: 300px;
-}
-
-.sidebar ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.sidebar ul li{
-    height: 60px;
-    position: relative;
-    width: 0%;
-    list-style: none;
-    transition: 0.3s;
-}
-
-.sidebar ul li a{
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    color: white;
-}
-
-.sidebar ul li a .icon{
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    /* background-image: url(images/chomusuke.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
-}
-
-.sidebar ul li a .name{
-    position: relative;
-    display: block;
-    padding: 0 10px;
-    height: 60px;
-    line-height: 65px;
-    text-align: start;
-    white-space: nowrap;
-}
-
-.sidebar ul li:hover{
-    padding-left: 50px;
-    font-size: 150%;
-    background-color: rgb(255, 0, 200);
-    width: 130%;
-}
-
-.sideimg{
-    height: 40px;
-    width: 40px;
-    justify-self: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* Showcase section */
-
-.showcase{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.browsebutton{
-    text-align: center;
-    padding: 0;
-    margin-top: 200px;
-    color: white;
-    text-decoration: none;
-    background-color: rgb(255, 0, 200);
-    padding: 25px;
-    font-size: 130%;
-    transition: 0.3s;
-    opacity: 80%;
-}
-
-.browsebutton:hover{
-    padding: 30px;
-    padding-left: 45px;
-    padding-right: 45px;
-    background-color: rgb(0, 132, 255);
-    border-radius: 7px;
-    font-size: 150%;
-    opacity: 100%;
-}
-
-.parallax{
-    min-height: 500px;
-    background: transparent;
-}
-
-.filler{
-    margin: 80px;
-    padding: 25px;
-}
-
-.showcasebottom{
-    text-align: center;
-    padding: 80px 0 80px 0;
-}
-
-.viewall{
-    text-decoration: none;
-    padding: 20px;
-    background-color:  rgb(255, 0, 200);
-    color: white;
-    transition: 0.2s;
-}
-
-.viewall:hover{
-    background-color: rgb(0, 132, 255);
-    padding: 25px;
-    border-radius: 7px;
-    font-size: 110%;
-}
-
-footer{
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    background-color: black;
-}
-
-P{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 100px;
-}
-
-/* Loader */
-
-.loader-wrapper {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgb(27, 27, 27);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(images/kitsuneloader.gif);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-@media (max-width: 700px){
-    .parallax{
+@media (min-width: 769px){
+    .showcasemobile{
         display: none;
     }
+
+    header{
+        height: 90px;
+    }
+
+    /* Logo */
+
+    .logocontainer{
+        margin-left: 25px;
+        height: 100%;
+        width: 300px;
+        transition: 0.3s;
+    }
+
+    .logo{
+        height: 80%;
+        width: 80%;
+        background-image: url(images/KitsuneShopLogo2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+    }
+
+    .logo:hover{
+        height: 90%;
+        width: 90%;
+        background-image: url(images/kitsunelogo.gif);
+        transition: 0.5s;
+    }
+
+    /* Sidebar */
+
+    .sidebar{
+        top: 100px;
+        padding-top: 10px;
+        position: fixed;
+        width: 60px;
+        height: 24%;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .sidebar.active{
+        width: 300px;
+    }
+
+    .sidebar:hover{
+        width: 300px;
+    }
+
+    .sidebar ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .sidebar ul li{
+        height: 60px;
+        position: relative;
+        width: 0%;
+        list-style: none;
+        transition: 0.3s;
+    }
+
+    .sidebar ul li a{
+        position: relative;
+        display: block;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar ul li a .icon{
+        position: relative;
+        display: block;
+        min-width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        /* background-image: url(images/chomusuke.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; */
+    }
+
+    .sidebar ul li a .name{
+        position: relative;
+        display: block;
+        padding: 0 10px;
+        height: 60px;
+        line-height: 65px;
+        text-align: start;
+        white-space: nowrap;
+    }
+
+    .sidebar ul li:hover{
+        padding-left: 50px;
+        font-size: 150%;
+        background-color: rgb(255, 0, 200);
+        width: 130%;
+    }
+
+    .sideimg{
+        height: 40px;
+        width: 40px;
+        justify-self: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Showcase section */
+
+    .showcase{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .browsebutton{
+        text-align: center;
+        padding: 0;
+        margin-top: 200px;
+        color: white;
+        text-decoration: none;
+        background-color: rgb(255, 0, 200);
+        padding: 25px;
+        font-size: 130%;
+        transition: 0.3s;
+        opacity: 80%;
+    }
+
+    .browsebutton:hover{
+        padding: 30px;
+        padding-left: 45px;
+        padding-right: 45px;
+        background-color: rgb(0, 132, 255);
+        border-radius: 7px;
+        font-size: 150%;
+        opacity: 100%;
+    }
+
+    .parallax{
+        min-height: 500px;
+        background: transparent;
+    }
+
+    .filler{
+        margin: 80px;
+        padding: 25px;
+    }
+
+    .showcasebottom{
+        text-align: center;
+        padding: 80px 0 80px 0;
+    }
+
+    .viewall{
+        text-decoration: none;
+        padding: 20px;
+        background-color:  rgb(255, 0, 200);
+        color: white;
+        transition: 0.2s;
+    }
+
+    .viewall:hover{
+        background-color: rgb(0, 132, 255);
+        padding: 25px;
+        border-radius: 7px;
+        font-size: 110%;
+    }
+
+    footer{
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        background-color: black;
+    }
+
+    P{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+    }
+
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: rgb(255, 0, 200);
+        cursor: pointer;
+        transition: 0.3s;
+        background-image: url(images/home.png);
+        background-size: contain;
+        display: none;
+    }
+
+    .toggle:hover{
+        background-color: rgb(0, 132, 255);
+    }
+
+    .toggle:before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+
+    /* Loader */
+
+    .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(27, 27, 27);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/kitsuneloader.gif);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+
+/* Mobile */
+@media (max-width: 768px){
+    .parallax, footer, .showcasebottom, .filler, .parallax-slider{
+        display: none;
+    }
+
+    body{
+        height: min-content;
+    }
+
+
+
+
+
+    header{
+        height: 90px;
+        padding-bottom: 20px;
+    }
+
+
+    /* Logo */
+
+    .logocontainer{
+        padding-top: 10px;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo{
+        height: 100%;
+        width: 70%;
+        background-image: url(images/KitsuneShopLogo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+
+    /* Toggler */
+    /* =================================================================== */
+    .toggle{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: rgb(255, 0, 200);
+        cursor: pointer;
+        transition: 0.3s;
+        background-image: url(images/home.png);
+        background-size: contain;
+        display: none;
+    }
+
+    .toggle:hover{
+        background-color: rgb(0, 132, 255);
+    }
+
+    .toggle:before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /* =================================================================== */
+
+
+
+
+    /* Shop Items */
+        /* =================================================================== */
+
+.showcasemobile{
+    height: 350px;
+    width: 100%;
+}
+
+.mobilecontainer{
+    height: 100%;
+    width: 100%;
+}
+
+.mobilecontainer ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.mobilecontainer ul li{
+    list-style: none;
+    height: 175px;
+    width: 384px;
+    align-content: center;
+    flex: 130px;
+}
+
+.mobilecontainer ul li a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: url(images/senko.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+    color: rgb(255, 0, 200);
+    padding: 50% 0 50% 0;
+    text-align: center;
+    font-size: 170%;
+}
+
+        /* =================================================================== */
 }
