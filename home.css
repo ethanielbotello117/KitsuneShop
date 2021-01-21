@@ -277,7 +277,7 @@ html{
 
 
 /* Mobile */
-@media (max-width: 768px){
+@media (max-width: 1000px){
     .desktop{
         display: none;
     }
@@ -289,8 +289,10 @@ html{
     /* Navbar */
 
     .navbarback{
+        position:-webkit-sticky; 
+        position:sticky;
+        bottom:0;
         bottom: 0;
-        position: fixed;
         /* background: rgb(0, 0, 0); */
         background-color: rgb(27, 27, 27);
         width: 100%;
