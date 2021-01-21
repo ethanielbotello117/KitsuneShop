@@ -383,6 +383,16 @@ html{
         font-size: 30px;
         text-align: center;
         opacity: 70%;
+        transition: 0.4s;
+    }
+
+    h3:hover{
+        background-color: rgb(255, 0, 200);
+        color: white;
+    }
+
+    .featured:hover{
+        height: 300px;
     }
 
     h3:active{
