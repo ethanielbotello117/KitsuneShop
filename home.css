@@ -11,13 +11,14 @@ html{
     z-index: 2;
 }
 
-body{
-    background: rgb(27, 27, 27);
-    height: 1000px;
-}
-
 @media (min-width: 769px){
-    .showcasemobile{
+
+    body{
+        background: rgb(27, 27, 27);
+        height: 1000px;
+    }
+
+    .mobile{
         display: none;
     }
 
@@ -255,126 +256,146 @@ body{
 }
 
 
+    /* Loader */
+
+    .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(27, 27, 27);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/kitsuneloader.gif);
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
 
 /* Mobile */
 @media (max-width: 768px){
-    .parallax, footer, .showcasebottom, .filler, .parallax-slider{
+    .desktop{
         display: none;
     }
 
     body{
-        height: min-content;
+        height: 900px;
     }
 
+    /* Navbar */
 
-
-
-
-    header{
-        height: 90px;
-        padding-bottom: 20px;
+    .navbarback{
+        bottom: 0;
+        position: fixed;
+        /* background: rgb(0, 0, 0); */
+        background-color: rgb(27, 27, 27);
+        width: 100%;
     }
 
+    .navbar{
+        width: fit-content;
+        margin: 0 auto;
+        align-content: center;
+    }
+
+    .navbar ul{
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    .navbar ul li{
+        display: inline;
+        text-align: center;
+    }
+
+    .navbar ul li a{
+        display: inline-block;
+        justify-content: space-evenly;
+        padding: 5px 25px 0 25px;
+    }
+
+    .navbar ul li a img{
+        height: 50px;
+    }
+
+/* ========================================================== */
 
     /* Logo */
 
-    .logocontainer{
-        padding-top: 10px;
-        height: 100%;
-        width: 100%;
-        margin: auto;
-    }
-
     .logo{
+        padding: 2% 0 2% 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .logo a{
         height: 100%;
-        width: 70%;
-        background-image: url(images/KitsuneShopLogo.png);
-        background-size: contain;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img{
+        height: 40%;
+        width: 40%;
+    }
+
+/* ========================================================== */
+
+    /* Homepage */
+
+    .homepage{
+        padding: 10% 0 0 0;
+        background-image: url(images/Senko2.jpg);
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        margin: auto;
     }
 
-    .sidebar{
-        display: none;
-    }
-
-
-    /* Toggler */
-    /* =================================================================== */
-    .toggle{
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
-        background: rgb(255, 0, 200);
-        cursor: pointer;
-        transition: 0.3s;
-        background-image: url(images/home.png);
-        background-size: contain;
-        display: none;
-    }
-
-    .toggle:hover{
-        background-color: rgb(0, 132, 255);
-    }
-
-    .toggle:before{
-        position: absolute;
+    .featured{
+        text-decoration: none;
+        color: white;
+        padding: 40px;
         width: 100%;
-        height: 100%;
-        line-height: 60px;
-        text-align: center;
-        font-size: 24px;
+        display: block;
+        background-image: url(images/chomusuke.png);
+        background-size: cover;
+        background-position: center;
     }
 
-    /* =================================================================== */
+    .featured ::before{
+        content: "";
+        opacity: 0%;
+    }
 
+    .featured h3{
+        /* background: rgb(0, 132, 255); */
+        margin: 0 auto;
+        width: 55%;
+        /* color: rgb(255, 0, 200); */
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 30px;
+        /* border: rgb(255, 0, 200) solid 3px; */
+        border: white solid 3px;
+    }
 
+    .homepage img{
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    p{
+        text-align: center;
+    }
 
-    /* Shop Items */
-        /* =================================================================== */
-
-.showcasemobile{
-    height: 350px;
-    width: 100%;
-}
-
-.mobilecontainer{
-    height: 100%;
-    width: 100%;
-}
-
-.mobilecontainer ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-}
-
-.mobilecontainer ul li{
-    list-style: none;
-    height: 175px;
-    width: 384px;
-    align-content: center;
-    flex: 130px;
-}
-
-.mobilecontainer ul li a{
-    height: 100%;
-    width: 100%;
-    display: block;
-    background-image: url(images/senko.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-decoration: none;
-    color: rgb(255, 0, 200);
-    padding: 50% 0 50% 0;
-    text-align: center;
-    font-size: 170%;
-}
-
-        /* =================================================================== */
 }

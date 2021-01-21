@@ -13,86 +13,140 @@
     <script src="parallax.min.js"></script>
 </head>
 
-<body class="desktop">
-    <header>
-        <div class="logocontainer"><a href="index.html"><div class="logo"></div></a></div>
-    </header>
-    <section class="sidebar">
-        <ul>
-            <li class="sidelink"><a href="index.html" class="homelink">
-                    <span class="icon">
-                        <img class="sideimg" src="images/chomusuke.png" alt="">
-                    </span>
-                    <span class="name">Home</span>
-                </a></li>
+<body>
+    <section class="desktop">
+        <header>
+            <div class="logocontainer"><a href="index.html"><div class="logo"></div></a></div>
+        </header>
+        <section class="sidebar">
+            <ul>
+                <li class="sidelink"><a href="index.html" class="homelink">
+                        <span class="icon">
+                            <img class="sideimg" src="images/chomusuke.png" alt="">
+                        </span>
+                        <span class="name">Home</span>
+                    </a></li>
 
-            <li class="sidelink"><a href="form(dark)/form.html" class="formlink">
-                    <span class="icon">
-                        <img class="sideimg" src="images/ManoAloe.jpg" alt="">
-                    </span>
-                    <span class="name">Form</span>
-                </a></li>
+                <li class="sidelink"><a href="form(dark)/form.html" class="formlink">
+                        <span class="icon">
+                            <img class="sideimg" src="images/ManoAloe.jpg" alt="">
+                        </span>
+                        <span class="name">Form</span>
+                    </a></li>
 
-            <li class="sidelink"><a href="browse(dark)/browse.html" class="browselink">
-                    <span class="icon">
-                        <img src="images/Astolfo.jpg" alt="" class="sideimg">
-                    </span>
-                    <span class="name">Browse</span>
-                </a></li>
-        </ul>
+                <li class="sidelink"><a href="browse(dark)/browse.html" class="browselink">
+                        <span class="icon">
+                            <img src="images/Astolfo.jpg" alt="" class="sideimg">
+                        </span>
+                        <span class="name">Browse</span>
+                    </a></li>
+            </ul>
+        </section>
+
+
+
+        <div class="parallax" data-parallax="scroll" data-image-src="images/Senko2.jpg" data-z-index="1">
+            <section class="showcase">
+            <a href="items/item1/item1.html" class="browsebutton">View</a>
+        </section>
+        </div>
+        <div class="filler">
+
+        </div>
+
+        <div class="parallax" data-parallax="scroll" data-image-src="images/Astolfo.jpg" data-z-index="1">
+            <section class="showcase">
+            <a href="items/item2/item2.html" class="browsebutton">View</a>
+        </section>
+        </div>
+        <div class="filler">
+
+        </div>
+
+        <div class="parallax" data-parallax="scroll" data-image-src="images/ManoAloe.jpg" data-z-index="1">
+        <section class="showcase">
+            <a href="items/item1/item1.html" class="browsebutton">View</a>
+        </section>    
+        </div>
+        </div>
+
+        <section class="showcasebottom">
+            <a href="browse(dark)/browse.html" class="viewall">Browse All</a>
+        </section>
+
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script type="text/javascript">
+            function toggleMenu(){
+                let navigation = document.querySelector('.sidebar');
+                navigation.classList.toggle('active');
+            }
+        </script>
+
+        <footer>
+            © 2021, KitsuneShop
+        </footer>
     </section>
 
-    <section class="showcasemobile">
-        <div class="mobilecontainer">
-            <ul>
-                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
-                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
-                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
-                <li class="itemlink"><a href="items/item1/item1.html">View</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="mobile">
+
+    <div class="logo">
+        <a href="index.html"><img src="images/KitsuneShopLogo.png" alt=""></a>
+    </div>
+
+    <div class="navbarback">
+        <div class="navbar">
+            <ul class="navlist">
+                <li>
+                    <a href="index.html" class="icon">
+                        <img src="images/senko.png" alt="" class="navimg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="browse(dark)/browse.html" class="icon">
+                        <img src="images/senko.png" alt="" class="navimg">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="form(dark)/form.html" class="icon">
+                        <img src="images/senko.png" alt="" class="navimg">
+                    </a>
+                </li>
             </ul>
         </div>
+    </div>
+
+    <div class="homepage">
+        <img src="images/kitsuneloader.gif" alt="">
+
+    </div>
+    
+    <a class="featured" href="items/item1/item1.html">
+        <h3>View Featured</h3>
+    </a>
+    
+    <a class="featured" href="items/item1/item1.html">
+        <h3>View Featured</h3>
+    </a>
+
+    <a class="featured" href="items/item1/item1.html">
+        <h3>View Featured</h3>
+    </a>
+
     </section>
-
-    <div class="parallax" data-parallax="scroll" data-image-src="images/Senko2.jpg" data-z-index="1">
-        <section class="showcase">
-        <a href="items/item1/item1.html" class="browsebutton">View</a>
-    </section>
-    </div>
-    <div class="filler">
-
-    </div>
-
-    <div class="parallax" data-parallax="scroll" data-image-src="images/Astolfo.jpg" data-z-index="1">
-        <section class="showcase">
-        <a href="items/item2/item2.html" class="browsebutton">View</a>
-    </section>
-    </div>
-    <div class="filler">
-
-    </div>
-
-    <div class="parallax" data-parallax="scroll" data-image-src="images/ManoAloe.jpg" data-z-index="1">
-    <section class="showcase">
-        <a href="items/item1/item1.html" class="browsebutton">View</a>
-    </section>    
-    </div>
-    </div>
-
-    <section class="showcasebottom">
-        <a href="browse(dark)/browse.html" class="viewall">Browse All</a>
-    </section>
-
-    <div class="toggle" onclick="toggleMenu()"></div>
-    <script type="text/javascript">
-        function toggleMenu(){
-            let navigation = document.querySelector('.sidebar');
-            navigation.classList.toggle('active');
-        }
-    </script>
-
-    <footer>
-        Copyright 2021 KitsuneShop
-    </footer>
 
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
