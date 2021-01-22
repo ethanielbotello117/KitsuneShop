@@ -3,6 +3,10 @@ html{
     color: white;
 }
 
+html.active{
+    background-color:  rgb(41, 0, 32);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +17,11 @@ html{
 
 body{
     background: rgb(27, 27, 27);
+    transition: 0.3s;
+}
+
+body.active{
+    background-color:  rgb(41, 0, 32);
 }
 
 @media (min-width: 1000px){
@@ -281,7 +290,7 @@ body{
     }
 
     body{
-        min-height: 100vh;
+        min-height: 10vh;
     }
 
     .toggle{
@@ -313,7 +322,7 @@ body{
         height: 100%;
         right: 100%;
         background: rgb(41, 0, 32);
-        transition: 0.5s;
+        transition: 0.2s;
     }
 
     .menu.active{
