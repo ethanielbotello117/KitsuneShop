@@ -11,12 +11,11 @@ html{
     z-index: 2;
 }
 
-@media (min-width: 769px){
+body{
+    background: rgb(27, 27, 27);
+}
 
-    body{
-        background: rgb(27, 27, 27);
-        height: 1000px;
-    }
+@media (min-width: 999px){
 
     .mobile{
         display: none;
@@ -259,8 +258,7 @@ html{
     /* Loader */
 
     .loader-wrapper {
-        width: 100%;
-        height: 100%;
+        height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
@@ -283,16 +281,122 @@ html{
     }
 
     body{
-        /* height: 1500px; */
+        min-height: 100vh;
     }
 
-    /* Navbar */
+    .toggle{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        right: 25px;
+        top: 25px;
+        background: aqua;
+        transition: 0.3s;
+    }
+
+    .toggle.active{
+        right: 20px;
+        top: 20px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .mobile{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .menu{
+        padding: 20px 0 0 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 100%;
+        background: rgb(41, 0, 32);
+        transition: 0.5s;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+    .logo{
+        height: 100px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .logo img{
+        height: 100%;
+    }
+
+    .menu ul li{
+        border-top: 2px solid  rgb(87, 0, 68);
+        border-bottom: 2px solid  rgb(87, 0, 68);
+        padding: 25px 0 25px 0;
+        list-style: none;
+        font-size: 40px;
+    }
+
+    .link{
+        height: 50px;
+        width: max-content;
+        margin: 0 auto;
+        padding: 5px 0 0 0;
+    }
+
+    .menu ul{
+        padding: 50px 0 0 0;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .linklist.active{
+        opacity: 100%;
+    }
+
+    .menu ul li a{
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+    }
+
+    .menu ul li a .icon{
+        height: 50px;
+        width: 50px;
+        background-color: cornflowerblue;
+    }
+
+    .icon img{
+        align-content: center;
+        height: 50px;
+    }
+
+    .linkname{
+        padding-left: 20px;
+        font-size: 50px;
+        text-decoration: none;
+        color: rgb(255, 0, 200);
+    }
+
+
+
+
+
+
+
+
+/* 
+    body{
+
+    }
+
+    /* Navbar 
 
     .navbarback{
         position:-webkit-sticky; 
         position:sticky;
         bottom: 0;
-        /* background: rgb(0, 0, 0); */
         background-color: rgb(27, 27, 27);
         width: 100%;
     }
@@ -324,15 +428,15 @@ html{
         height: 50px;
     }
 
-/* ========================================================== */
 
-    /* Logo */
+
+    /* Logo 
 
     .logo{
         padding: 2% 0 2% 0;
         display: flex;
         justify-content: center;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(27, 27, 27);
     }
 
     .logo a{
@@ -347,9 +451,8 @@ html{
         width: 40%;
     }
 
-/* ========================================================== */
 
-    /* Homepage */
+    /* Homepage 
 
     .homepage{
         padding: 10% 0 0 0;
@@ -383,16 +486,6 @@ html{
         font-size: 30px;
         text-align: center;
         opacity: 70%;
-        transition: 0.4s;
-    }
-
-    h3:hover{
-        background-color: rgb(255, 0, 200);
-        color: white;
-    }
-
-    .featured:hover{
-        height: 300px;
     }
 
     h3:active{
@@ -413,6 +506,6 @@ html{
 
     p{
         text-align: center;
-    }
+    } */
 
 }
