@@ -436,6 +436,15 @@ body.active{
         overflow: hidden;
     }
     
+
+    .slider1{
+        margin-top: 30px;
+        z-index: 90;
+        width: 100vh;
+        height: 350px;
+        overflow: hidden;
+    }
+
     .slides{
         width: 500%;
         height: 500px;
@@ -534,6 +543,22 @@ body.active{
     #radio8:checked ~ .first{
         margin-left: -60%;
     }
+
+    #radio9:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio10:checked ~ .first{
+        margin-left: -20%;
+    }
+    
+    #radio11:checked ~ .first{
+        margin-left: -40%;
+    }
+    
+    #radio12:checked ~ .first{
+        margin-left: -60%;
+    }
     
     /* Auto Navigation */
     
@@ -572,21 +597,36 @@ body.active{
     #radio4:checked ~ .nav-auto .auto-btn4{
         background: rgb(173, 0, 136);
     }
+    
+    #radio5:checked ~ .nav-auto .auto-btn5{
+        background: rgb(173, 0, 136);
+    }
+    
+    #radio6:checked ~ .nav-auto .auto-btn6{
+        background: rgb(173, 0, 136);
+    }
+    
+    #radio7:checked ~ .nav-auto .auto-btn7{
+        background: rgb(173, 0, 136);
+    }
 
-    #radio5:checked ~ .nav-auto .auto-btn1{
+    #radio8:checked ~ .nav-auto .auto-btn8{
+        background: rgb(173, 0, 136);
+    }   
+    
+    #radio9:checked ~ .nav-auto .auto-btn9{
+        background: rgb(173, 0, 136);
+    }
+
+    #radio10:checked ~ .nav-auto .auto-btn10{
         background: rgb(173, 0, 136);
     }
     
-    #radio6:checked ~ .nav-auto .auto-btn2{
+    #radio11:checked ~ .nav-auto .auto-btn11{
         background: rgb(173, 0, 136);
     }
     
-    #radio7:checked ~ .nav-auto .auto-btn3{
+    #radio12:checked ~ .nav-auto .auto-btn12{
         background: rgb(173, 0, 136);
     }
-    
-    #radio8:checked ~ .nav-auto .auto-btn4{
-        background: rgb(173, 0, 136);
-    }
-    
 }
