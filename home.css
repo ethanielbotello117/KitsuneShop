@@ -518,6 +518,22 @@ body.active{
     #radio4:checked ~ .first{
         margin-left: -60%;
     }
+
+    #radio5:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio6:checked ~ .first{
+        margin-left: -20%;
+    }
+    
+    #radio7:checked ~ .first{
+        margin-left: -40%;
+    }
+    
+    #radio8:checked ~ .first{
+        margin-left: -60%;
+    }
     
     /* Auto Navigation */
     
@@ -556,4 +572,21 @@ body.active{
     #radio4:checked ~ .nav-auto .auto-btn4{
         background: rgb(173, 0, 136);
     }
+
+    #radio5:checked ~ .nav-auto .auto-btn1{
+        background: rgb(173, 0, 136);
+    }
+    
+    #radio6:checked ~ .nav-auto .auto-btn2{
+        background: rgb(173, 0, 136);
+    }
+    
+    #radio7:checked ~ .nav-auto .auto-btn3{
+        background: rgb(173, 0, 136);
+    }
+    
+    #radio8:checked ~ .nav-auto .auto-btn4{
+        background: rgb(173, 0, 136);
+    }
+    
 }

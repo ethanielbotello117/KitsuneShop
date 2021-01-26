@@ -141,19 +141,19 @@
                 <input type="radio" name="radio-btn" id="radio4">
     
                 <div class="slide first">
-                    <div class="img s1"></div>
+                    <a href="index.html"><div class="img s1"></div></a>
                 </div>
     
                 <div class="slide">
-                    <div class="img s2"></div>
+                    <a href="index.html"><div class="img s2"></div></a>
                 </div>
     
                 <div class="slide">
-                    <div class="img s3"></div>
+                    <a href="index.html"><div class="img s3"></div></a>
                 </div>
     
                 <div class="slide">
-                    <div class="img s4"></div>
+                    <a href="index.html"><div class="img s4"></div></a>
                 </div>
     
                 <div class="nav-auto">
@@ -173,6 +173,50 @@
             </div>
         </div>
 
+
+
+
+                <!-- Home -->
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <input type="radio" name="radio-btn" id="radio6">
+                        <input type="radio" name="radio-btn" id="radio7">
+                        <input type="radio" name="radio-btn" id="radio8">
+            
+                        <div class="slide first">
+                            <div class="img s1"></div>
+                        </div>
+            
+                        <div class="slide">
+                            <div class="img s2"></div>
+                        </div>
+            
+                        <div class="slide">
+                            <div class="img s3"></div>
+                        </div>
+            
+                        <div class="slide">
+                            <div class="img s4"></div>
+                        </div>
+            
+                        <div class="nav-auto">
+                            <div class="auto-btn5"></div>
+                            <div class="auto-btn6"></div>
+                            <div class="auto-btn7"></div>
+                            <div class="auto-btn8"></div>
+                        </div>
+            
+                        <div class="nav-manual">
+                            <label for="radio5" class="manual-btn"></label>
+                            <label for="radio6" class="manual-btn"></label>
+                            <label for="radio7" class="manual-btn"></label>
+                            <label for="radio8" class="manual-btn"></label>
+                        </div>
+            
+                    </div>
+                </div>
+
         <script type="text/javascript">
             let counter = 1;
             setInterval(function(){
@@ -180,6 +224,17 @@
                 counter++;
                 if(counter > 4){
                     counter = 1;
+                }
+            }, 5000);
+        </script>
+
+        <script type="text/javascript">
+            let counter1 = 5;
+            setInterval1(function(){
+                document.getElementById('radio' + counter1).checked = true;
+                counter1++;
+                if(counter1 > 8){
+                    counter1 = 5;
                 }
             }, 5000);
         </script>
