@@ -321,7 +321,7 @@ body.active{
     }
     
     .toggle.active{
-        transform: rotate(360deg);
+        transform: rotate(180deg);
     }
     
     .mobile{
