@@ -474,7 +474,7 @@ body.active{
     
     .s4{
         background: url(images/Astolfo.jpg);
-    }
+    } 
     
     /* Manual Navigation */
     
@@ -484,7 +484,7 @@ body.active{
         width: 200px;
         justify-content: center;
         margin-top: 270px;
-        margin-left: 60px;
+        margin-left: 35px;
     }
     
     .manual-btn{
@@ -559,7 +559,7 @@ body.active{
         width: 200px;
         justify-content: center;
         margin-top: 270px;
-        margin-left: 60px;
+        margin-left: 35px;
     }
     
     .nav-auto div{
