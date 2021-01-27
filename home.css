@@ -355,8 +355,6 @@ body.active{
     }
     
     .menu ul li{
-        border-top: 2px solid  rgb(87, 0, 68);
-        border-bottom: 2px solid  rgb(87, 0, 68);
         padding: 25px 0 25px 0;
         list-style: none;
         font-size: 40px;
@@ -625,9 +623,10 @@ body.active{
         display: block;
         transition: 0.5s;
         padding: 0 0 50px 0;
+        height: 100%;
     }
-/*     
-    .plop.active{
-        display: none;
+    
+    /* .plop.active{
+        height: 100px;
     } */
 }
