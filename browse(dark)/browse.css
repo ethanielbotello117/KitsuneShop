@@ -13,6 +13,10 @@ html{
 
 @media (min-width: 1000px){
 
+    .mobile{
+        display: none;
+    }
+
 .parallax-window {
     min-height: 400px;
     background: transparent;
@@ -359,7 +363,7 @@ header{
     .item-icon{
         width: 50%;
         height: 100%;
-        background: url(../images/chomusuke.png);
+        background: url(../images/Astolfo.jpg);
         background-size: cover;
         background-position: center;
     }

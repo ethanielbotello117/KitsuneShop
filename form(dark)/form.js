@@ -44,3 +44,18 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+
+function toggleMenu(){
+  let navigation = document.querySelector('.menu');
+  let toggle = document.querySelector('.toggle');
+  let links = document.querySelector('.linklist');
+  let html = document.querySelector('html');
+  let body = document.querySelector('body');
+  let plop = document.querySelector('.plop');
+  navigation.classList.toggle('active');
+  toggle.classList.toggle('active');
+  links.classList.toggle('active');
+  html.classList.toggle('active');
+  body.classList.toggle('active');
+  plop.classList.toggle('active');
+}
