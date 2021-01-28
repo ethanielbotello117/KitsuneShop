@@ -8,7 +8,10 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
+
+@media (min-width: 1000px){
 
 .parallax-window {
     min-height: 400px;
@@ -166,4 +169,203 @@ header{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 999px){
+    .desktop{
+        display: none;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(36, 36, 36);
+    }
+    
+    body.active{
+        background-color:  rgb(41, 0, 32);
+    }
+    
+       /* Navigation Menu */
+    
+    .toggle{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: 3%;
+        top: 20px;
+        background: aqua;
+        transition: 0.3s ease-in-out;
+        background: url(../images/borger.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+        transform: rotate(0);
+        z-index: 101;
+    
+    }
+    
+    .toggle.active{
+        transform: rotate(180deg);
+    }
+    
+    .mobile{
+        height: 2400px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .menu{
+        padding: 20px 0 0 0;
+        position: absolute;
+        width: 100%;
+        height: 2400px;
+        right: 100%;
+        background: rgb(41, 0, 32);
+        transition: 0.2s;
+        z-index: 100;
+    }
+    
+    .menu.active{
+        right: 0;
+    }
+    
+    .logo{
+        height: 100px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    
+    .logo img{
+        height: 100%;
+    }
+    
+    .menu ul li{
+        padding: 25px 0 25px 0;
+        list-style: none;
+        font-size: 40px;
+    }
+    
+    .link{
+        height: 50px;
+        width: max-content;
+        margin: 0 auto;
+        padding: 5px 0 0 0;
+    }
+    
+    .menu ul{
+        padding: 50px 0 0 0;
+        transition: 1s;
+        opacity: 0;
+    }
+    
+    .linklist.active{
+        opacity: 100%;
+    }
+    
+    .menu ul li a{
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+    }
+    
+    .menu ul li a .icon{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .icon img{
+        align-content: center;
+        height: 50px;
+    }
+    
+    .linkname{
+        padding-left: 20px;
+        font-size: 50px;
+        text-decoration: none;
+        color: rgb(202, 0, 111);
+    }
+    
+    
+    
+    
+    
+    
+    /* HomeScreeen */
+
+    .homescreen{
+        padding: 0 0 20px 0;
+    }
+    
+    .homescreen .homelogo{
+        padding: 20px 0 0 0;
+        height: 65px;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    
+    .homescreen .homelogo img{
+        height: 100%;
+    }
+
+    /* Items */
+
+    .mobile-items{
+        margin: 0 auto;
+        width: 80%;
+        height: 200px;
+    }
+    .mobile-item{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        border:  solid 8px rgb(56, 56, 56);
+        background: rgb(56, 56, 56);
+    }
+
+    .mobile-item .mobile-description{
+        padding-left: 20px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .mobile-item h1{
+        margin: 0 100% 0 0;
+        color: white;
+    }
+
+    .mobile-item h3{
+        color: white;
+        margin: 0;
+    }
+
+    .item-icon{
+        width: 50%;
+        height: 100%;
+        background: url(../images/chomusuke.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .filler{
+        width: 100%;
+        height: 50px;
+    }
 }
