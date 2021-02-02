@@ -1,0 +1,462 @@
+
+html{
+    color: white;
+    background: rgb(36, 36, 36);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+@media (min-width: 1000px){
+
+    .mobile{
+        display: none;
+    }
+
+    html{
+        background-color: rgb(27, 27, 27);
+        color: white;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        z-index: 2;
+    }
+    
+    /* Logo */
+    
+    header{
+        height: 90px;
+    }
+    
+    .logocontainer{
+        margin-left: 25px;
+        height: 100%;
+        width: 300px;
+        transition: 0.3s;
+    }
+    
+    .logo{
+        height: 80%;
+        width: 80%;
+        background-image: url(../../images/KitsuneShopLogo2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+    }
+    
+    .logo:hover{
+        height: 90%;
+        width: 90%;
+        background-image: url(../../images/kitsunelogo.gif);
+        transition: 0.5s;
+    }
+    
+    /* Sidebar */
+    
+    .sidebar{
+        top: 100px;
+        padding-top: 10px;
+        position: fixed;
+        width: 60px;
+        height: 24%;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 3;
+    }
+    
+    .sidebar:hover{
+        width: 300px;
+    }
+    
+    .sidebar ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .sidebar ul li{
+        height: 60px;
+        position: relative;
+        width: 0%;
+        list-style: none;
+        transition: 0.3s;
+    }
+    
+    .sidebar ul li a{
+        position: relative;
+        display: block;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .sidebar ul li a .icon{
+        position: relative;
+        display: block;
+        min-width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+    
+    .sidebar ul li a .name{
+        position: relative;
+        display: block;
+        padding: 0 10px;
+        height: 60px;
+        line-height: 65px;
+        text-align: start;
+        white-space: nowrap;
+    }
+    
+    .sidebar ul li:hover{
+        padding-left: 50px;
+        font-size: 150%;
+        background-color: rgb(255, 0, 200);
+        width: 130%;
+    }
+    
+    .sideimg{
+        height: 40px;
+        width: 40px;
+        justify-self: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Product */
+    
+    .product{
+        align-self: center;
+        height: 600px;
+        width: 1100px;
+        background-color: black;
+        margin: auto;
+        display: flex;
+    }
+    
+    .productimg{
+        height: 100%;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 70% 30%;
+    }
+    
+    .image{
+        height: 80%;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .mainimg1{
+        background: url(../../images/chomusuke.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .subimg1{
+        background: url(../../images/chomusuke.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .subimg2{
+        background: url(../../images/Tofumang.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .mainimg1{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .subimg1{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .subimg2{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .productdsc{
+        margin: auto;
+        font-size: 150%;
+    }
+    
+    p{
+        padding: 5px;
+        transition: 0.5s;
+    }
+    
+    p:hover{
+        background-color: aqua;
+        font-size: 130%;
+    }
+    
+}
+
+
+@media (max-width: 999px){
+
+    .desktop{
+        display: none;
+    }
+
+    body{
+        height: 1000px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        background: rgb(36, 36, 36);
+    }
+
+    /* Navigation Menu */
+
+    .toggle{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: 3%;
+        top: 20px;
+        background: aqua;
+        transition: 0.3s ease-in-out;
+        background: url(../../images/borger.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+        transform: rotate(0);
+        z-index: 101;
+
+    }
+
+    .toggle.active{
+        transform: rotate(180deg);
+    }
+
+    .mobile{
+
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .menu{
+        padding: 20px 0 0 0;
+        position: absolute;
+        width: 100%;
+        height: 1000px;
+
+        right: 100%;
+        background: rgb(41, 0, 32);
+        transition: 0.2s;
+        z-index: 100;
+    }
+
+    .menu.active{
+        right: 0;
+    }
+
+    .logo{
+        height: 100px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .logo img{
+        height: 100%;
+    }
+
+    .menu ul li{
+        padding: 25px 0 25px 0;
+        list-style: none;
+        font-size: 40px;
+    }
+
+    .link{
+        height: 50px;
+        width: max-content;
+        margin: 0 auto;
+        padding: 5px 0 0 0;
+    }
+
+    .menu ul{
+        padding: 50px 0 0 0;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    .linklist.active{
+        opacity: 100%;
+    }
+
+    .menu ul li a{
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+    }
+
+    .menu ul li a .icon{
+        height: 50px;
+        width: 50px;
+    }
+
+    .icon img{
+        align-content: center;
+        height: 50px;
+    }
+
+    .linkname{
+        padding-left: 20px;
+        font-size: 50px;
+        text-decoration: none;
+        color: rgb(202, 0, 111);
+    }
+
+
+
+
+
+
+    /* HomeScreeen */
+
+    .homescreen{
+        padding: 0 0 20px 0;
+    }
+
+    .homescreen .homelogo{
+        padding: 20px 0 0 0;
+        height: 65px;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .homescreen .homelogo img{
+        height: 100%;
+    }
+
+    /* Item Images */
+
+    .container{
+        margin: 100px 0 0 0;
+    }
+
+    .slider{
+        margin: 0 auto;
+        width: 350px;
+        height: 300px;
+        overflow: hidden;
+        background: aqua;
+    }
+
+    .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+
+    .slides input{
+        display: none;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 1s;
+    }
+
+    .slide .img{
+        width: 100%;
+        height: 350px;
+        background-size: 220%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+    }
+
+    .nav-manual{
+        position: absolute;
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        margin-top: 330px;
+        margin-left: 70px;
+        text-align: left;
+    }
+
+    .manual-btn{
+        border: 2px solid rgb(255, 0, 200);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover{
+        background: rgb(173, 0, 136);
+    }
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+    }
+
+    .s1{
+        background: url(../../images/chomusuke.png);
+    }
+
+    .s2{
+        background: url(../../images/Tofumang.png);
+    }
+
+    /* Description */
+
+    .mobileinfo{
+        padding: 80px 0 50px 0;
+        margin: 0 auto;
+        height: max-content;
+        width: 45vh;
+        font-size: 200%;
+    }
+
+    .form{
+        width: 200px;
+        height: max-content;
+        margin: 0 auto;
+        background: rgb(255, 0, 149);
+        text-align: center;
+        text-decoration: none;
+        padding: 15px;
+    }
+
+    .form a{
+        color: white;
+        font-size: 200%;
+    }
+
+}
