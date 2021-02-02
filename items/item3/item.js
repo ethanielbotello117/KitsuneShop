@@ -36,3 +36,8 @@ setInterval(function(){
         counter3 = 9;
     }
 }, 5000);
+
+let person = {
+    firstName: "ok",
+    
+}
